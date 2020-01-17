@@ -1,0 +1,65 @@
+{
+  "name": "codelytv/ddd-skeleton",
+  "license": "MIT",
+  "type": "project",
+  "description": "DDD php Skeleton - Monorepository",
+  "require": {
+    "php": ">7.2",
+
+    "ext-amqp": "*",
+    "ext-apcu": "*",
+    "ext-json": "*",
+    "ext-zend-opcache": "*",
+    "ext-pdo": "*",
+
+    "symfony/framework-bundle": "^4.3",
+    "symfony/messenger": "^4.3",
+    "symfony/dotenv": "^4.3",
+    "symfony/yaml": "^4.3",
+    "symfony/twig-bundle": "^4.3",
+    "symfony/validator": "^4.3",
+
+    "lambdish/phunctional": "^2.0",
+
+    "ramsey/uuid": "^3.8",
+
+    "doctrine/dbal": "^2.9",
+    "doctrine/orm": "^2.6",
+    "ocramius/proxy-manager": "2.2.2",
+
+    "elasticsearch/elasticsearch": "^7.3",
+    "monolog/monolog": "^2.0"
+  },
+  "require-dev": {
+    "ext-xdebug": "*",
+
+    "roave/security-advisories": "dev-master",
+
+    "behat/behat": "^3.5",
+    "behat/mink-extension": "^2.3",
+    "behat/mink-browserkit-driver": "^1.3",
+    "friends-of-behat/symfony-extension": "^2.0",
+
+    "phpunit/phpunit": "^8.2",
+    "mockery/mockery": "^1.2",
+
+    "fzaninotto/faker": "^1.8",
+    "wouterj/eloquent-bundle": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodelyTv\\Apps\\Mooc\\Backend\\": "apps/mooc/backend/src",
+      "CodelyTv\\Apps\\Mooc\\Frontend\\": "apps/mooc/frontend/src",
+
+      "CodelyTv\\Apps\\Backoffice\\Backend\\": "apps/backoffice/backend/src",
+      "CodelyTv\\Apps\\Backoffice\\Frontend\\": "apps/backoffice/frontend/src",
+
+      "CodelyTv\\": ["src"]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CodelyTv\\Tests\\": ["tests/src"]
+    }
+  }
+}
